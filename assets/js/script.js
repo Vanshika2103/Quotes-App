@@ -10,6 +10,9 @@ const newQoutes = ()=>{
         // console.log(qoutes.content);
         qoute.innerText = qoutes.content;
         author.innerText = `By ${qoutes.authorSlug}`
+    }).catch((error)=>{
+        let myError = `<h1>Server down. Please try again later.</h1>`
+        document.write(myError);
     })
 }
 
